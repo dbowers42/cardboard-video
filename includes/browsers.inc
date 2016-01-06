@@ -23,5 +23,5 @@
   Draw_Piller( .07, "7%", <-8,0,0>)  // Internet explorer
   Draw_Piller(.20, "20%", <0,0,0>)   // Firefox
   Draw_Piller(.04, "4%", <8,0,0>)    // Safari
-  Draw_Piller(1, "2%", <16,0,0>)   // Opera
+  Draw_Piller(.02, "2%", <16,0,0>)   // Opera
 }
