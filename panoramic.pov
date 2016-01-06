@@ -18,8 +18,9 @@ global_settings {assumed_gamma 1.0}
 // 2  - Look at browser traffic
 // 3  - Look at device traffic
 // 4  - Look at search categories
-// 5  - Debug
-#declare CameraMode = 1;
+// 5  - Top view Camera
+// 6  - Debug
+#declare CameraMode = 5;
 
 sky_sphere { Clouds }
 
@@ -27,18 +28,38 @@ object { ground }
 
 light_source { DebugLight}
 
+
 object {
 	Browsers
 	translate ViewDistance * z
 }
 
 object {
-	SearchCategories
-	rotate 360 * 4 * z * clock
-  scale .75
-	rotate -90 * y
-	translate <-ViewDistance, 30, 0>
+	Browsers
+	translate ViewDistance * z
+	rotate 120 * y
 }
+
+object {
+	Browsers
+	translate ViewDistance * z
+	rotate -120 * y
+}
+/*
+object {
+	SearchCategories
+	scale .5
+	rotate -90 * y
+	translate <-ViewDistance, 15, 0>
+}
+
+object {
+	SearchCategories
+	scale .5
+	rotate 90 * y
+	translate <ViewDistance, 15, 0>
+}*/
+
 
 #switch (CameraMode)
 	#case (CameraMode = 1)
@@ -56,6 +77,10 @@ object {
 	#case (CameraMode = 4)
 		camera { SearchCategoryCamera }
 	#break
+
+	#case (CameraMode = 5)
+		camera { TopViewCamera }
+	End
 
  	#else
 		camera { DebugCamera }

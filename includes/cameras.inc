@@ -4,8 +4,11 @@
 #declare ViewLocationHeight = 12;
 #declare ViewLookAtHeight = 8;
 
-#declare DebugCameraLocation = <0, ViewLocationHeight, 0>;
-#declare DebugCameraLookAt = <0, ViewLookAtHeight, ViewDistance>;
+#declare DebugCameraLocation = <0, 80, 0>;
+#declare DebugCameraLookAt = <0, 0, 0>;
+
+#declare TopViewCameraLocation = <0, 80, 0>;
+#declare TopViewCameraLookAt = <0, 0, 0>;
 
 #declare BrowserTrafficCameraLocation = <0, ViewLocationHeight, 0>;
 #declare BrowserTrafficCameraLookAt = <0, ViewLookAtHeight, ViewDistance>;
@@ -24,6 +27,13 @@
 	location    DebugCameraLocation
   right       x * image_width / image_height
   look_at     DebugCameraLookAt
+}
+
+#declare TopViewCamera = camera {
+	perspective
+	location    TopViewCameraLocation
+  right       x * image_width / image_height
+  look_at     TopViewCameraLookAt
 }
 
 #declare BrowserTrafficCamera = camera {
