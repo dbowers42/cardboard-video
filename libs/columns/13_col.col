@@ -1,0 +1,72 @@
+/*
+THE FIVE ORDERS OF CLASSICAL ARCHITECTURE (version 1.0)
+
+(C) Nathan G B O'Brien  1997
+
+This file contains the various texture definitions for the columns contained in 13_col.inc
+
+*/
+
+// Column shaft
+#declare T_Column1 =
+texture {pigment {
+	color <1.00,0.97,0.78>
+	}
+  	finish {phong 0.6}
+}
+
+// Column flutes
+#declare T_Column2 =
+texture {pigment {
+	color <0.94,0.81,0.69>
+	}
+  	finish {phong 0.6}
+}
+
+// Base colour of capitals
+#declare T_Column3 =
+texture {pigment {
+	color <1.00,0.93,0.87>
+	}
+  	finish {phong 0.6}
+}
+
+// Feature colour of capitals
+#declare T_Column4 =
+texture {pigment {
+	color <0.96,0.85,0.76>
+	}
+  	finish {phong 0.6}
+}
+
+// Top plate of capitals
+#declare T_Column5 =
+texture {pigment {
+	color <0.92,0.78,0.64>
+	}
+  	finish {phong 0.6}
+}
+
+// Colour of Flower feature to capital
+#declare T_Column6 =
+texture {pigment {
+	color <1.00,0.93,0.87>
+	}
+  	finish {phong 0.6}
+}
+
+// Colour of Base
+#declare T_Column7 =
+texture {pigment {
+	color <0.95,0.85,0.76>
+	}
+  	finish {phong 0.6}
+}
+
+// Colour of Plinth
+#declare T_Column8 =
+texture {pigment {
+	color <0.89,0.74,0.60>
+	}
+  	finish {phong 0.6}
+}
