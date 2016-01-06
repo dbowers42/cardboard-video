@@ -1,10 +1,10 @@
 // Camera Settings
 // Constants
-#declare ViewDistance = 30;
+#declare ViewDistance = 40;
 #declare ViewLocationHeight = 12;
 #declare ViewLookAtHeight = 8;
 
-#declare DebugCameraLocation = <0, 80, 0>;
+#declare DebugCameraLocation = <60, 60, -60>;
 #declare DebugCameraLookAt = <0, 0, 0>;
 
 #declare TopViewCameraLocation = <0, 80, 0>;
