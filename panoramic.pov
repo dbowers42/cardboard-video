@@ -14,6 +14,7 @@ global_settings {assumed_gamma 1.0}
 #include "includes/ground.inc"
 #include "includes/browsers.inc"
 #include "includes/search.inc"
+#include "includes/pie.inc"
 
 
 // 1  - Look at final scene
@@ -26,27 +27,28 @@ global_settings {assumed_gamma 1.0}
 
 background { White}
 
-//sky_sphere { Clouds }
+sky_sphere { Clouds }
 
-//object { ground }
+object { ground }
 
 light_source { DebugLight}
 
 
 object {
-	Browsers
+	BrowserTraffic
 	translate ViewDistance * z
 }
 
 object {
 	SearchCategories
 	scale .6
+	rotate 360  * 4 * z * clock
 	translate <0, 20, ViewDistance>
 	rotate 120 * y
 }
 
 object {
-	Browsers
+	DeviceTraffic
 	translate ViewDistance * z
 	rotate -120 * y
 }
