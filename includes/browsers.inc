@@ -12,6 +12,7 @@
   	    ttf "timrom.ttf" Message 1, 0
         scale <2.5,2.5,.5>
   		  translate <-.75,2,-2>
+        pigment { rgb <0.81640625, 0.078125, 0.38671875> *.6}
   	}
   	object {
   		Obj
