@@ -16,7 +16,6 @@ global_settings {assumed_gamma 1.0}
 #include "includes/search.inc"
 #include "includes/pie.inc"
 
-
 // 1  - Look at final scene
 // 2  - Look at browser traffic
 // 3  - Look at device traffic

@@ -1,6 +1,6 @@
 // Camera Settings
 // Constants
-#declare ViewDistance = 30;
+#declare ViewDistance = 20;
 #declare ViewLocationHeight = 12;
 #declare ViewLookAtHeight = 8;
 
