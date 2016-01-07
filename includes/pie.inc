@@ -3,7 +3,6 @@
 #declare RingFinish = finish {
 	phong .5
 	metallic .2
-	reflection .5
 	specular .3
 	reflection .2
 }
