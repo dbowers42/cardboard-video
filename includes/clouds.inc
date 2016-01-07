@@ -25,6 +25,7 @@
           [0.5 1.0 color rgbt <1, 1, 1, 1>
                    color rgbt <1, 1, 1, 1>]
       }
+      rotate 360 * clock * y
       scale <0.2, 0.5, 0.2>
     }
 
